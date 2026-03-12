@@ -1,9 +1,6 @@
 services:
   mini-auth:
-    build: .
-    container_name: mini-auth
+    image: pviland/00-depotserveur-mini-auth:latest
+    container_name: 00-depotserveur-mini-auth 
     ports:
       - "8080:8080"
-    environment:
-      APP_PASSWORD: "incorrect"
-
